@@ -209,7 +209,7 @@
   }
 
   .conocenos h5{
-    padding-top: 10px;
+    padding: (10,0,5,10);
     color: #004791;
     font-size: 10px;
     text-align: left;
