@@ -6,28 +6,32 @@ const userName = document.getElementById("userName");
 const userEmail = document.getElementById("userEmail");
 const mensaje = document.getElementById("mensaje");
 
- //Variable para la expresión regular
+//Variable para la expresión regular
 const regUserName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const regUserEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
- //console.log(mensaje.value);
+//console.log(mensaje.value);
     console.log(mensaje.value.length);
 
- //Validar Nombre
+//Validar Nombre
     if(!userName.value.trim() || !regUserName.test(userName.value)) {
         alert("Nombre invalido");
     }
 
- //Validar Email
+//Validar Email
     if(!userEmail.value.trim() || !regUserEmail.test(userEmail.value)) {
         alert("Email invalido");
     }
 
- //Validar Mensaje
-    if(mensaje.value.length>1) {
+//Validar Mensaje
+    if(mensaje.value.length<1) {
         alert("Cantidad de caracteres no validos");
     }
-    console.log("Los datos fueron enviados")
+    console.log("Los datos fueron enviados");
+
+//Los datos fueron enviados
+    alert("Los datos fueron enviados");
+    
 });
