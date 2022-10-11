@@ -21,16 +21,16 @@
   
   header{
     width: 100%;
-    height: 200px;
+    height: 160px;
     background-color: white;
   }
   
   .logo{
-    padding: 25px 0;
+    padding: 10px 0;
   }
   
   .logo img{
-    width: 170px;
+    width: 150px;
     display: block;
     margin: auto;
   }
@@ -40,7 +40,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 430px;
+    max-width: 420px;
     margin: auto;
   }
   
@@ -59,7 +59,7 @@
   
   .banner{
     width: 100%;
-    height: 500px;
+    height: 480px;
     background-image: url(FONDO.png);
     background-position: center;
     background-size: cover;
@@ -116,16 +116,18 @@
   
   .bienvenida{
     width: 100%;
+    height: 90px;
     background-color: #004791;
-    margin-top: 2px;
+    margin-top: none;
+    margin-bottom: 5px;
     color: #ffffff;
     text-align: center;
+    justify-content: space-between;
   }
   
   .bienvenida h3{
     font-size: 30px;
     padding-top: 20px;
-    padding-bottom: 20px;
     line-height: 1.7em;
     max-width: 370px;
     margin: 0 auto;
@@ -138,18 +140,62 @@
     line-height: 1.7em;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  iframe{
-    margin:auto;
-    padding: 15px;
+    align-items: center;
   }
 
+  .bienvenidaIndex{
+    width: 100%;
+    height: 120px;
+    background-color: #004791;
+    margin-top: none;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .bienvenidaIndex h3{
+    font-size: 30px;
+    padding-top: 20px;
+    line-height: 1.7em;
+    max-width: 370px;
+    margin: 0 auto;
+  }
+  
+  .bienvenidaIndex p{
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    line-height: 1.7em;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .llamada-accion-2 p{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .llamada-accion-2 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #0280C4;
+    margin-top: 35px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .llamada-accion-2 a:hover{
+    background-color: #FECE15;
+  }
   /*FIN DE SECCION DE BIENVENIDA*/
   
   /*SECCION DE SOBRE NOSOTROS*/
   .nosotros{
-    padding-bottom: 80px;
+    padding: 20px;
   }
   
   .nosotros > .contenedor{
@@ -160,8 +206,8 @@
   }
   
   .foto-equipo{
-    width: 100%;
-    max-width: 570px;
+    width: 75%;
+    max-width: 550px;
   }
   
   .foto-equipo img{
@@ -169,7 +215,7 @@
   }
   
   .foto-servicios{
-    width: 100%;
+    width: 75%;
     max-width: 100%;
   }
   
